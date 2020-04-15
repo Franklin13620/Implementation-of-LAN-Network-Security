@@ -11,7 +11,7 @@
 | 50 | Italia | S7,S8,S9 | 192.25.30.0/26 | Router-on-a-stick |
 | 60 | Panama | S7,S8,S9 | 192.25.30.64/26 | Router-on-a-stick |
 | 70 | Servidor_Radius | S7,S8,S9 | 192.25.30.128/26 | Router-on-a-stick |
-| :---: | :---: | :---: | :---: | :---: |
+|  |  |  |  |  |
 | 10 | Mexico | SW-1,SW-2,SW-3 | 172.25.10.0/25 | Router-on-a-stick |
 | 20 | Espania | SW-1,SW-2,SW-3 | 172.25.10.0/25 | Router-on-a-stick |
 | 30 | Honduras | SW-4,SW-5,SW-6 | 172.25.20.0/26 | Router-on-a-stick |
