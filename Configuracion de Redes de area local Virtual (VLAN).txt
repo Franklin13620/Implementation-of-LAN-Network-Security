@@ -1,0 +1,35 @@
+*********CREANDO VLANS**************
+
+***SW 1.2.3*****     
+enable
+configure terminal
+
+vlan 10
+name Guatemala
+exit
+vlan 20
+name EEUU
+exit
+
+interface fa0/24
+switchport mode trunk
+switchport trunk allowed vlan 10,20
+
+***SW 4.5.6*****
+vlan 30
+name El Salvador
+exit
+vlan 40
+name Colombia
+exit
+
+***SW 7.8.9*****
+vlan 50
+name El Salvador
+exit
+vlan 60
+name Colombia
+exit
+vlan 70
+name Colombia
+exit
