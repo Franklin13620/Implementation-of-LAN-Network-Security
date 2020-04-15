@@ -38,4 +38,4 @@ microgrupo de trabajo con su respectiva contraseña.
 - [ ] **I**. En los routers R2 y R4 configure el acceso vía SSH y agregue el usuario local Gabriela con la contraseña DondeEstaGabriela.
 
 ### Topologia de la Red:
-(https://raw.githubusercontent.com/Franklin13620/Implementation-of-LAN-Network-Security/master/assets/Topologia.png)
+![alt text](https://raw.githubusercontent.com/Franklin13620/Implementation-of-LAN-Network-Security/master/assets/Topologia.png)
