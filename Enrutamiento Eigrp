@@ -1,0 +1,64 @@
+*R1
+router eigrp 25
+network 192.25.10.0
+network 192.25.10.128
+network 192.25.0.0
+no auto-summary
+
+*R3
+router eigrp 25
+network 192.25.20.0
+network 192.25.20.128
+network 192.25.0.32
+no auto-summary
+
+*R2
+router eigrp 25
+network 192.25.30.0
+network 192.25.30.64
+network 192.25.30.128
+network 192.25.0.64
+no auto-summary
+
+*CORE-1
+router eigrp 25
+network 192.25.0.0
+network 192.25.0.32
+network 192.25.0.64
+network 10.25.0.0
+no auto-summary
+
+*SW-BORDER
+ip route 0.0.0.0 0.0.0.0 fa0/24
+router eigrp 25
+network 10.25.0.0
+network 11.25.0.0
+
+*CORE-2
+router eigrp 25
+network 11.25.0.0
+network 172.16.0.0
+network 172.16.0.32
+no auto-summary
+
+*R4
+router eigrp 25
+network 172.25.10.0
+network 172.16.0.0
+
+*R4
+router eigrp 25
+network 172.25.20.0
+network 172.25.20.64
+network 172.25.20.128
+network 172.16.0.32
+no auto-summary
+
+// Ruta estatica ISP y SW-BORDER
+*ISP
+ip route 0.0.0.0 0.0.0.0 gi0/1
+
+
+
+
+
