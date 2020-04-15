@@ -20,7 +20,7 @@
 
 - [ ] **B**. La asignación de direcciones IPs para las computadoras de las VLANs será mediante el servicio de DHCP.
 
-- [ ] **C**. Configure el protocolo EIGRP para que los dispositivos de la red interna se comuniquen y anuncie una rutaestática hacia el ISP y viceversa.
+- [x] **C**. Configure el protocolo EIGRP para que los dispositivos de la red interna se comuniquen y anuncie una rutaestática hacia el ISP y viceversa.
 
 - [ ] **D**. Permita que los puertos de acceso aprendan 6 direcciones MAC en caso de que haya infracción las
 interfaces deben apagarse con un tiempo de envejecimiento de 10 minutos.
