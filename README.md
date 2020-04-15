@@ -1,6 +1,6 @@
 # Implementation-of-LAN-Network-Security
 ### REQUERIMIENTOS:
-- [x] A. Configure las VLANs, rangos de interfaces y enrutamiento Inter-VLAN de acuerdo con la siguiente información:
+- [x] **A**. Configure las VLANs, rangos de interfaces y enrutamiento Inter-VLAN de acuerdo con la siguiente información:
 
 | VLANs | Nombre | Switches | IPv4 | Inter-VLAN |
 | :---: | :---: | :---: | :---: | :---: |
@@ -18,21 +18,24 @@
 | 40 | Brasil | SW-4,SW-5,SW-6 | 172.25.20.64/26 | Router-on-a-stick |
 | 50 | Servidor_Tacacs | SW-4,SW-5,SW-6 | 172.25.20.128/26 | Router-on-a-stick |
 
-- [ ] B. La asignación de direcciones IPs para las computadoras de las VLANs será mediante el servicio de DHCP.
+- [ ] **B**. La asignación de direcciones IPs para las computadoras de las VLANs será mediante el servicio de DHCP.
 
-- [ ] C. Configure el protocolo EIGRP para que los dispositivos de la red interna se comuniquen y anuncie una rutaestática hacia el ISP y viceversa.
+- [ ] **C**. Configure el protocolo EIGRP para que los dispositivos de la red interna se comuniquen y anuncie una rutaestática hacia el ISP y viceversa.
 
-- [ ] D. Permita que los puertos de acceso aprendan 6 direcciones MAC en caso de que haya infracción las
+- [ ] **D**. Permita que los puertos de acceso aprendan 6 direcciones MAC en caso de que haya infracción las
 interfaces deben apagarse con un tiempo de envejecimiento de 10 minutos.
 
-- [ ] E. El tráfico no etiquetado debe viajar por la VLAN 100 además deshabilite la propagación de BPDU y evite los estados de escucha y aprendizaje para minimizar el tiempo de convergencia de STP.
+- [ ] **E**. El tráfico no etiquetado debe viajar por la VLAN 100 además deshabilite la propagación de BPDU y evite los estados de escucha y aprendizaje para minimizar el tiempo de convergencia de STP.
 
-- [ ] F. Habilite la mitigación DHCP snooping y ARP en los switches donde configuro las VLANs .
+- [ ] **F**. Habilite la mitigación DHCP snooping y ARP en los switches donde configuro las VLANs .
 
-- [ ] G. Utilizando el modelo AAA cree un grupo llamado CafeNegroLeaks para almacenar la lista de usuarios de
+- [ ] **G**. Utilizando el modelo AAA cree un grupo llamado CafeNegroLeaks para almacenar la lista de usuarios de
 inicio de sesión en el router R2 y configure en el Servidor_Radius cada uno de los integrantes del
 microgrupo de trabajo con su respectiva contraseña.
 
-- [ ] H. Utilizando el modelo AAA cree un grupo llamado CafeNegro para almacenar la lista de usuarios de inicio de sesión en el router R4 y configure en el Servidor_Tacacs cada uno de los integrantes del microgrupo de trabajo con su respectiva contraseña.
+- [ ] **H**. Utilizando el modelo AAA cree un grupo llamado CafeNegro para almacenar la lista de usuarios de inicio de sesión en el router R4 y configure en el Servidor_Tacacs cada uno de los integrantes del microgrupo de trabajo con su respectiva contraseña.
 
-- [ ] I. En los routers R2 y R4 configure el acceso vía SSH y agregue el usuario local Gabriela con la contraseña DondeEstaGabriela.
+- [ ] **I**. En los routers R2 y R4 configure el acceso vía SSH y agregue el usuario local Gabriela con la contraseña DondeEstaGabriela.
+
+### Topologia de la Red:
+(https://raw.githubusercontent.com/Franklin13620/Implementation-of-LAN-Network-Security/master/assets/Topologia.png)
