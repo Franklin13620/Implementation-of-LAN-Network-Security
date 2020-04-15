@@ -1,4 +1,33 @@
-/* Redes Router3 al Mulcapa Core-1 y viceversa
+//inicia lado derecho
+
+/* Redes Router1 al Multicapa Core-1 y viceversa
+
+*Router 1
+int gi0/1
+ip add 192.25.0.1 255.255.255.224
+no shu
+
+*Core-1
+int fa0/24
+no switchport
+ip add 192.25.0.2 255.255.255.224
+no shu */
+
+
+/* Redes Router2 al Multicapa Core-1 y viceversa
+
+*Router 2
+int gi0/1
+ip add 192.25.0.65 255.255.255.224
+no shu
+
+*Core-1
+int fa0/23
+no switchport
+ip add 192.25.0.66 255.255.255.224
+no shu */
+
+/* Redes Router3 al Multicapa Core-1 y viceversa
 
 *Router 3
 int gi0/1
@@ -11,4 +40,94 @@ no switchport
 ip add 192.25.0.34 255.255.255.224
 no shu */
 
+//finaliza lado derecho
 
+
+//del lado derecho switchmulticapa hacia el Multicapa del centro
+
+/* Redes Multicapa Core-1 al Multicapa SW-BORDER y viceversa
+
+*CORE-1
+int gi0/2
+no switchport
+ip add 10.25.0.1 255.255.255.252
+no shu
+
+*SW-BORDER
+int gi0/2
+no switchport
+ip add 10.25.0.2 255.255.255.252
+no shu */
+
+
+/* Redes  Multicapa SW-BORDER al Multicapa Core-2 y viceversa
+
+*SW-BORDER
+int gi0/1
+no switchport
+ip add 11.25.0.1 255.255.255.252
+no shu
+
+*CORE-2
+int gi0/1
+no switchport
+ip add 11.25.0.2 255.255.255.252
+no shu */
+
+
+/* Redes  Multicapa SW-BORDER al Router ISP y viceversa
+
+*SW-BORDER
+int fa0/24
+no switchport
+ip add 200.25.200.1 255.255.255.0
+no shu
+
+*ISP
+int gi0/1
+ip add 200.25.200.2 255.255.255.0
+no shu */
+
+/* Redes Router ISP a Servidor "https://covid19.gob.sv/" y viceversa
+
+*Router ISP
+int gi0/0
+ip add 80.25.80.1 255.255.255.224
+no shu
+
+*Servidor
+int fa0
+ip add 80.25.80.2 255.255.255.252
+no shu */
+
+
+
+
+//del lado izquierdo
+
+/* Redes  Multicapa CORE-2 al Router4 y viceversa
+
+*CORE-2
+int fa0/23
+no switchport
+ip add 172.16.0.33 255.255.255.252
+no shu
+
+*Router4
+int gi0/1
+ip add 172.16.0.34 255.255.255.252
+no shu */
+
+
+/* Redes  Multicapa CORE-2 al Router5 y viceversa
+
+*CORE-2
+int fa0/24
+no switchport
+ip add 172.16.0.1 255.255.255.252
+no shu
+
+*Router4
+int gi0/1
+ip add 172.16.0.2 255.255.255.252
+no shu */
