@@ -1,0 +1,12 @@
+/* Redes Router3 al Mulcapa Core-1 y viceversa
+
+*Router 3
+int gi0/1
+ip add 192.25.0.33 255.255.255.224
+no shu
+
+*Core-1
+int fa0/22
+no switchport
+ip add 192.25.0.34 255.255.255.224
+no shu */
