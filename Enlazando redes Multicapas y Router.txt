@@ -10,3 +10,5 @@ int fa0/22
 no switchport
 ip add 192.25.0.34 255.255.255.224
 no shu */
+
+
