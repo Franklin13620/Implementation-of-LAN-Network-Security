@@ -31,6 +31,7 @@ no auto-summary
 *SW-BORDER
 ip route 0.0.0.0 0.0.0.0 fa0/24
 router eigrp 25
+redistribute static
 network 10.25.0.0
 network 11.25.0.0
 
@@ -46,7 +47,7 @@ router eigrp 25
 network 172.25.10.0
 network 172.16.0.0
 
-*R4
+*R5
 router eigrp 25
 network 172.25.20.0
 network 172.25.20.64
