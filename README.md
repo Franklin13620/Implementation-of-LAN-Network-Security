@@ -29,13 +29,13 @@ interfaces deben apagarse con un tiempo de envejecimiento de 10 minutos.
 
 - [x] **F**. Habilite la mitigación DHCP snooping y ARP en los switches donde configuro las VLANs .
 
-- [ ] **G**. Utilizando el modelo AAA cree un grupo llamado CafeNegroLeaks para almacenar la lista de usuarios de
+- [x] **G**. Utilizando el modelo AAA cree un grupo llamado CafeNegroLeaks para almacenar la lista de usuarios de
 inicio de sesión en el router R2 y configure en el Servidor_Radius cada uno de los integrantes del
 microgrupo de trabajo con su respectiva contraseña.
 
-- [ ] **H**. Utilizando el modelo AAA cree un grupo llamado CafeNegro para almacenar la lista de usuarios de inicio de sesión en el router R4 y configure en el Servidor_Tacacs cada uno de los integrantes del microgrupo de trabajo con su respectiva contraseña.
+- [x] **H**. Utilizando el modelo AAA cree un grupo llamado CafeNegro para almacenar la lista de usuarios de inicio de sesión en el router R4 y configure en el Servidor_Tacacs cada uno de los integrantes del microgrupo de trabajo con su respectiva contraseña.
 
-- [ ] **I**. En los routers R2 y R4 configure el acceso vía SSH y agregue el usuario local Gabriela con la contraseña DondeEstaGabriela.
+- [x] **I**. En los routers R2 y R4 configure el acceso vía SSH y agregue el usuario local Gabriela con la contraseña DondeEstaGabriela.
 
 ### Topologia de la Red:
 ![alt text](https://raw.githubusercontent.com/Franklin13620/Implementation-of-LAN-Network-Security/master/assets/Topologia.png)

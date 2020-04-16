@@ -228,3 +228,6 @@ interface r fa0/22-23
 switchport mode trunk
 switchport trunk allowed vlan 30,40,50
 
+
+///Completado////
+

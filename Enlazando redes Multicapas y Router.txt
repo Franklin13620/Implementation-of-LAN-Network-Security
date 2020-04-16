@@ -121,3 +121,6 @@ int gi0/1
 ip add 172.16.0.34 255.255.255.224
 no shu
 exit 
+
+
+///Completado////
