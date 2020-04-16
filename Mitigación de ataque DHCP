@@ -1,0 +1,24 @@
+*S1,S2
+ip dhcp snooping
+int r fa0/1-10
+ip dhcp snooping limit rate 6
+exit
+int r fa0/22-23
+ip dhcp snooping trust
+exit
+ip dhcp snooping vlan 10,20
+
+*S3
+ip dhcp snooping
+int r fa0/1-10
+ip dhcp snooping limit rate 6
+exit
+int r fa0/22-24
+ip dhcp snooping trust
+exit
+ip dhcp snooping vlan 10-20
+exit
+
+
+
+
