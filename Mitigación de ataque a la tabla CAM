@@ -1,0 +1,10 @@
+// Limitar direcciones a la tabla CAM
+
+// Solo aprender 6 direcciones MAC y si hay violacion apagarse en un tiempo de 
+evejesimiento de 10 minutos
+*Todos los Switches, excepto los que tienen 2 vlan, solo sern configurados desde fa0/1-10*
+int r fa0/1-15
+switchport port-security again time 10
+switchport port-security mac-address sticky
+Switchport port-security maximum 6 
+switchport port-security violation shutdown
