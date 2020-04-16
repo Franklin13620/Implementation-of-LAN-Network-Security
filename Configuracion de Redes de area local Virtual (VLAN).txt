@@ -10,6 +10,9 @@ exit
 vlan 20
 name EEUU
 exit
+vlan 100
+name Nativa
+exit
 
 // Puertos de accesso//
 
@@ -48,6 +51,9 @@ name ElSalvador
 exit
 vlan 40
 name Colombia
+exit
+vlan 100
+name Nativa
 exit
 
 // Puertos de accesso//
@@ -90,6 +96,9 @@ name Panama
 exit
 vlan 70
 name Servidor_Radius
+exit
+vlan 100
+name Nativa
 exit
 
 
@@ -139,6 +148,9 @@ exit
 vlan 20
 name España
 exit
+vlan 100
+name Nativa
+exit
 
 // Puertos de accesso//
 
@@ -178,6 +190,9 @@ name Brasil
 exit
 vlan 50
 name Servidor_Tacacs
+exit
+vlan 100
+name Nativa
 exit
 
 // Puertos de accesso//
