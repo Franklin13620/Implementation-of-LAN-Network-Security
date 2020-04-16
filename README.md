@@ -18,7 +18,7 @@
 | 40 | Brasil | SW-4,SW-5,SW-6 | 172.25.20.64/26 | Router-on-a-stick |
 | 50 | Servidor_Tacacs | SW-4,SW-5,SW-6 | 172.25.20.128/26 | Router-on-a-stick |
 
-- [ ] **B**. La asignación de direcciones IPs para las computadoras de las VLANs será mediante el servicio de DHCP.
+- [x] **B**. La asignación de direcciones IPs para las computadoras de las VLANs será mediante el servicio de DHCP.
 
 - [x] **C**. Configure el protocolo EIGRP para que los dispositivos de la red interna se comuniquen y anuncie una rutaestática hacia el ISP y viceversa.
 
