@@ -1,0 +1,54 @@
+// Apagar puertos no utilizados
+
+Para los switches que solo poseen 2 vlans
+int r gi0/1-2
+shu
+exit
+int r fa0/11-21
+shut
+exit
+int fa0/24
+shu 
+exit
+
+Para los switches que solo poseen 3 vlans
+int r gi0/1-2
+shu
+exit
+int r fa0/16-21
+shu
+exit
+int fa0/24
+shu
+exit    
+
+// Deshabilitando las negociaciones de DTP
+R: Se hizo en el archivo "Configuracion de Redes de area local Virtual (VLAN)"
+switchport nonegotiate
+
+// Deshabilitando la propagacion BPDU
+**Para los switches que tinen 2 vlan**
+int r fa0/1-10
+spanning-tree bpduguard enable 
+exit
+**Para los switches que tinen 3 vlan**
+int r fa0/1-15
+spanning-tree bpduguard enable 
+exit
+
+//Cambiando VLAN Nativa a todos los puertos troncales
+switchport nonegotiate
+switchport trunk native vlan 100
+
+//Usar en los switches
+spanning-tree mode rapid-pvst 
+
+// Mejorar la convergencia para los puertos finales
+int r fa0/1-10
+spanning-tree portfast
+exit
+
+*spanning-tree portfast bpduguard (no se utilizaco)*
+R/ porque los puertos de accesso no estan enviando BPDUs eso lo configuramos 
+arriba, por ese motivo no, se esta usando este comando en los puertos troncales,
+caso contrario utilizarlo.  
