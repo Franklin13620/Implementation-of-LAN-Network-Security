@@ -27,7 +27,7 @@ interfaces deben apagarse con un tiempo de envejecimiento de 10 minutos.
 
 - [x] **E**. El tráfico no etiquetado debe viajar por la VLAN 100 además deshabilite la propagación de BPDU y evite los estados de escucha y aprendizaje para minimizar el tiempo de convergencia de STP.
 
-- [ ] **F**. Habilite la mitigación DHCP snooping y ARP en los switches donde configuro las VLANs .
+- [x] **F**. Habilite la mitigación DHCP snooping y ARP en los switches donde configuro las VLANs .
 
 - [ ] **G**. Utilizando el modelo AAA cree un grupo llamado CafeNegroLeaks para almacenar la lista de usuarios de
 inicio de sesión en el router R2 y configure en el Servidor_Radius cada uno de los integrantes del
