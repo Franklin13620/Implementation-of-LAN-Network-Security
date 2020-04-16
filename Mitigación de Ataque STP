@@ -1,0 +1,13 @@
+
+//Usar en los switches
+spanning-tree mode rapid-pvst 
+
+// Mejorar la convergencia para los puertos finales
+int r fa0/1-10
+spanning-tree portfast
+exit
+
+*spanning-tree portfast bpduguard (no se utilizaco)*
+R/ porque los puertos de accesso no estan enviando BPDUs eso lo configuramos 
+arriba, por ese motivo no, se esta usando este comando en los puertos troncales,
+caso contrario utilizarlo.  
