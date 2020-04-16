@@ -22,7 +22,7 @@
 
 - [x] **C**. Configure el protocolo EIGRP para que los dispositivos de la red interna se comuniquen y anuncie una rutaestática hacia el ISP y viceversa.
 
-- [ ] **D**. Permita que los puertos de acceso aprendan 6 direcciones MAC en caso de que haya infracción las
+- [x] **D**. Permita que los puertos de acceso aprendan 6 direcciones MAC en caso de que haya infracción las
 interfaces deben apagarse con un tiempo de envejecimiento de 10 minutos.
 
 - [ ] **E**. El tráfico no etiquetado debe viajar por la VLAN 100 además deshabilite la propagación de BPDU y evite los estados de escucha y aprendizaje para minimizar el tiempo de convergencia de STP.
