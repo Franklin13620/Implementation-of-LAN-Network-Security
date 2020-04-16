@@ -11,3 +11,7 @@ exit
 R/ porque los puertos de accesso no estan enviando BPDUs eso lo configuramos 
 arriba, por ese motivo no, se esta usando este comando en los puertos troncales,
 caso contrario utilizarlo.  
+
+
+// Deshabilitando la propagacion BPDU
+R: Hezo se hizo en el archivo "Mitigacion de Ataque VLAN"
