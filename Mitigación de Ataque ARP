@@ -1,0 +1,11 @@
+*S1,S2
+ip arp inspection vlan 10,20
+int r fa0/22-23
+ip arp inspection trust
+
+*S3
+ip arp inspection vlan 10,20
+int r fa0/22-24
+ip arp inspection trust
+exit
+
