@@ -1,0 +1,50 @@
+// Por el motivo de packet tracer y dhcp snooping vamos a deshabilitar el limite de paquete en la interfaces
+int r fa0/1-10
+no ip dhcp snooping limit rate 100
+exit
+*switches de 3 vlans*
+int r fa0/1-15
+no ip dhcp snooping limit rate 100
+exit
+
+// Agregamos como red confiable a los puertos 1-10 por el motivo de packet tracer
+int r fa0/1-10
+ip dhcp snooping trust
+exit
+*switches de 3 vlans*
+int r fa0/1-15
+ip dhcp snooping trust
+exit
+
+// La VLAN nativa debe pasarse tanto a las interfaces de acceso como troncales
+int r fa0/1-10, fa0/22-24
+switchport trunk native vlan 100
+exit
+*switches de 3 vlans*
+int r fa0/1-15, fa0/22-24
+switchport trunk native vlan 100
+exit
+
+// Eliminar la exlusion de las direcciones de DHCP para la VLAN 70
+no ip dhcp excluded-address 192.25.30.129 192.25.30.139
+
+// Eliminar la exclusión de DHCP para el vlan del Servidor_Tacacs:
+ no ip dhcp excluded-address 172.25.20.129 172.25.20.139
+
+// La VLAN nativa tambien debe pasarse tanto a las interfaces de acceso como troncales
+int r fa0/1-10
+switchport trunk native vlan 100
+exit
+*switches de 3 vlans*
+int r fa0/1-15
+switchport trunk native vlan 100
+exit
+
+*Troncales*
+int r fa0/22-23
+switchport trunk native vlan 100
+exit
+int r fa0/22-24
+switchport trunk native vlan 100
+exit
+
