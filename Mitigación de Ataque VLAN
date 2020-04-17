@@ -24,7 +24,6 @@ exit
 
 // Deshabilitando las negociaciones de DTP
 R: Se hizo en el archivo "Configuracion de Redes de area local Virtual (VLAN)"
-switchport nonegotiate
 
 // Deshabilitando la propagacion BPDU
 **Para los switches que tinen 2 vlan**
@@ -38,4 +37,6 @@ exit
 
 //Cambiando VLAN Nativa a todos los puertos troncales
 switchport nonegotiate
+switchport trunk native vlan 100
+//Cambiar la VLAN Nativa a todos los puertos de access
 switchport trunk native vlan 100
