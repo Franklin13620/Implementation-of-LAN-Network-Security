@@ -13,7 +13,7 @@
 | 70 | Servidor_Radius | S7,S8,S9 | 192.25.30.128/26 | Router-on-a-stick |
 |  |  |  |  |  |
 | 10 | Mexico | SW-1,SW-2,SW-3 | 172.25.10.0/25 | Router-on-a-stick |
-| 20 | Espania | SW-1,SW-2,SW-3 | 172.25.10.0/25 | Router-on-a-stick |
+| 20 | Espania | SW-1,SW-2,SW-3 | 172.25.128.0/25 | Router-on-a-stick |
 | 30 | Honduras | SW-4,SW-5,SW-6 | 172.25.20.0/26 | Router-on-a-stick |
 | 40 | Brasil | SW-4,SW-5,SW-6 | 172.25.20.64/26 | Router-on-a-stick |
 | 50 | Servidor_Tacacs | SW-4,SW-5,SW-6 | 172.25.20.128/26 | Router-on-a-stick |
