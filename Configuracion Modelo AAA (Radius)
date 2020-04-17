@@ -1,14 +1,15 @@
 // Configuracion
-Direccion Servidor_Radius: 192.25.30.139
+Direccion Servidor_Radius: 192.25.30.140
+Puerta de enlaze: 192.25.30.129
 *R2
 //Configuracion de SYSLOG y NTP
 logging on
-logging host 192.25.30.139
+logging host 192.25.30.140
 logging userinfo
 login on-success log
 login on-failure log
 service timestamps log datetime msec
-ntp server 192.25.30.139
+ntp server 192.25.30.140
 ntp update-calendar
 
 ip domain name ftorres.com
@@ -21,7 +22,7 @@ aaa authentication login CafeNegroLeaks group radius local enable
 aaa authentication enable default group radius local enable
 
 //Autentica Router
-radius-server host 192.25.30.139 key 072517
+radius-server host 192.25.30.140 key 072517
 
 //shh
 username Gabriela secret DondeEstaGabriela
